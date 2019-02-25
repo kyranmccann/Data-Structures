@@ -38,8 +38,11 @@ class ListNode:
         if self.next:
             self.next.prev = self.prev
 
+
 """Our doubly-linked list class. It holds references to
 the list's head and tail nodes."""
+
+
 class DoublyLinkedList:
     def __init__(self, node=None):
         self.head = node
@@ -100,7 +103,7 @@ class DoublyLinkedList:
                 return None
             if current_node.value > max_value:
                 max_value = current_node.value
-            if current_node.next == None:
+            if current_node.next is None:
                 return max_value
             else:
                 current_node = current_node.next
