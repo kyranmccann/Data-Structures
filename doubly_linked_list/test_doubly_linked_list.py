@@ -101,11 +101,9 @@ class DoublyLinkedListTests(unittest.TestCase):
     self.dll.add_to_tail(6)
 
     self.dll.delete(self.dll.head)
-    print('head:', self.dll.head.value)
     self.assertEqual(self.dll.head.value, 1)
     self.assertEqual(self.dll.tail.value, 6)
 
-    print('head:', self.dll.head.value)
     self.dll.delete(self.dll.head)
     self.assertEqual(self.dll.head.value, 6)
     self.assertEqual(self.dll.tail.value, 6)
